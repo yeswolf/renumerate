@@ -3,3 +3,4 @@ project(renumerate)
 
 add_executable(renumerate renumerate.c)
 target_link_libraries(renumerate "-framework IOKit" "-framework CoreFoundation")
+install(TARGETS renumerate DESTINATION bin)

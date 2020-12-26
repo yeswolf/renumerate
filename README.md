@@ -28,6 +28,9 @@ to be locationID's (in hex).  If no action option is specitied, a reenumerate co
 	 Show this help.
 ```
 # Examples
+Reset device at vid: 0x0488, pid: 0x5740
+
+`renumerate 0x0488,0x5740`
 
 Set the configuration of the device at vid: 0x05ac, pid: 0x1126 to 1:
 ```
@@ -43,3 +46,7 @@ $ reenumerate -v -l 0xfa144300 0xfd141310
 Either use CMake or 
 
 `cc reenumerate.c -framework IOKit -framework CoreFoundation -o reenumerate`
+
+# Installing
+
+`make install` from CMake build directory
