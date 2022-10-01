@@ -27,6 +27,13 @@ to be locationID's (in hex).  If no action option is specitied, a renumerate com
 --help, -h, -?
 	 Show this help.
 ```
+
+One can determine vendor, product, and location IDs with
+
+```
+system_profiler SPUSBDataType
+```
+
 # Examples
 Reset device at vid: 0x0488, pid: 0x5740
 
