@@ -8,7 +8,7 @@ Application for resetting USB devices on macOS. Borrowed from USB Prober app.
 
 The available options are as follows.  If no option is specified the values after the options are assumed to be a
 sequence of vendorID,productID pairs (in hex).  If the `-l` option is specified, the values after the options are assumed
-to be locationID's (in hex).  If no action option is specitied, a reenumerate command will be sent to the device(s):
+to be locationID's (in hex).  If no action option is specitied, a renumerate command will be sent to the device(s):
 ```
 --locationID, -l
 	 The values after the options are locationIDs, instead of vendorID,productID.
@@ -34,18 +34,16 @@ Reset device at vid: 0x0488, pid: 0x5740
 
 Set the configuration of the device at vid: 0x05ac, pid: 0x1126 to 1:
 ```
-$ reenumerate -v -c 1 0x05ac,0x1126
+$ renumerate -v -c 1 0x05ac,0x1126
 
-Reenumerate the devices at locationIDs 0xfa144300 and 0xfd141310
+Renumerate the devices at locationIDs 0xfa144300 and 0xfd141310
 
-$ reenumerate -v -l 0xfa144300 0xfd141310
+$ renumerate -v -l 0xfa144300 0xfd141310
 ```
 
 # Compiling
 
-Either use CMake or 
-
-`cc reenumerate.c -framework IOKit -framework CoreFoundation -o reenumerate`
+Either use CMake or `make`
 
 # Installing
 
