@@ -401,7 +401,7 @@ int main(int argc, const char *argv[] )
 
     }
 
-    kr = IOServiceGetMatchingServices(kIOMasterPortDefault,matchingDict, &foundDevices);	//consumes matchingDict reference
+    kr = IOServiceGetMatchingServices(kIOMainPortDefault,matchingDict, &foundDevices);	//consumes matchingDict reference
     matchingDict = NULL;
     if(kr)
     {
