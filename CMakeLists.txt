@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(renumerate)
+project(reenumerate)
 
-add_executable(renumerate reenumerate.c)
-target_link_libraries(renumerate "-framework IOKit" "-framework CoreFoundation")
-install(TARGETS renumerate DESTINATION bin)
+add_executable(reenumerate reenumerate.c)
+target_link_libraries(reenumerate "-framework IOKit" "-framework CoreFoundation")
+install(TARGETS reenumerate DESTINATION bin)
