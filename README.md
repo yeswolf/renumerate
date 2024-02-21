@@ -53,7 +53,13 @@ $ reenumerate -v -l 0xfa144300 0xfd141310
 
 # Compiling
 
-Either use CMake or `make`
+Either use CMake:
+
+```sh
+cmake -B Build && cmake --build Build
+```
+
+or `make`
 
 # Installing
 
